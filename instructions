@@ -1,0 +1,52 @@
+Completion Status:
+For now,the c program i have written does not work on role names with uppercase letters and with space.
+To fix this,i will need to use for loop to find if it exactly matches.
+To reduce time,i have just used strcmp functions.
+I have just used scanf to get input with %s identifier.
+It does not take input of more than a word.
+To fix this issue,i need to use fgets function.
+which i will fix if i get enough time.
+
+I have not finished the final 10th case.
+
+Instructions:
+*This program is written on clion ide with c99 standard
+
+*This is just a normal compilable c program.
+
+*Method of Approach:
+*Since,the project involves data with hierarchical structure one solution can be obviously using tree data structure.
+*Since,the project involves some priority for each level one option would be to use max-heap.
+*But,since the data involves variable number of childs,we may opt for k-ary heap.
+*But again the issue is each root node may not have equal number of child.
+*This makes the heap concept difficult to use.
+*Another approach would be to use a linked list and assign level and the master with each data.
+*But,not to make the problem complex i have implemented it using simple struct.
+
+
+*I initialized a struct datatype to store the role,employees with that role,level(with 1 being the top and with lower levels incremented with 1 each level),we also store the master role for this role.
+
+Reason for using sort function:
+We use a count variable to note down the number of role and we use it to initialize a new struct.
+Each new role is added based on the value of count variable.(But each role will store the level and other data separately).
+There is a need to sort this data based on level data to get our desired output.
+
+Steps to execute the code:
+1.I have added both the binary and source code of the c program with the name zoho_final and zoho_final.c respectively.
+2.If you wish to compile it,just use the below command in the location of the folder in terminal
+gcc -o zoho_final zoho_final.c
+
+This should get the binary for the source code which can be executed by just double clicking or typing ./zoho_final in terminal(linux).
+
+Each question asked has been added as each option(case) in the code.
+For example,to execute question 2,we first need to create root role so,enter 1.
+It will ask for root role,give a role.
+Now type option 2.
+It will ask the master for new role.
+Give master role(In our case,we have just created a root role so,give the root role as master role).
+Now,give the subrole.
+
+Likewise,each question has been executed as each case in the c program.
+
+
+PLEASE CONTACT ME ANY TIME YOU HAVE ISSUES IN EXECUTING THE CODE at +917010533558 or a.aswin@pm.me
